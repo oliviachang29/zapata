@@ -1,0 +1,69 @@
+
+header {
+	background: url("/assets/images/zapata.jpeg") no-repeat center center fixed;
+	background-position: 0% 50%;
+	background-size: 130%;
+	box-shadow: 13px 8px 15px 0 rgba(0,0,0,0.50);
+/*	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	position: relative;*/
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 6%;
+	/*display: flex;*/
+	/*flex-direction: row;*/
+}
+
+#name {
+	font-family: PathwayGothicOne-Regular;
+	font-size: 120px;
+	color: #000;
+	letter-spacing: 0;
+	line-height: 105px;
+	text-transform: uppercase;
+}
+
+#name-description {
+	font-family: Cardo-Regular;
+	font-size: 18px;
+	color: #454545;
+	text-align: left;
+	line-height: 30px;
+	width: 40%;
+	margin: 4% 0 7%;
+}
+
+#begin-button {
+	/* Rectangle: */
+	border: 2px solid #454545;
+	/* BEGIN: */
+	font-family: PathwayGothicOne-Regular;
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #454545;
+	padding: 10px 80px 16px;
+	text-align: center;
+	&:hover {
+		transition: background-color 0.5s ease;
+		background: rgba(0,0,0,0.10);
+	};
+}
+
+#header-text {
+	z-index: 100;
+}
+#header-img {
+	flex: 1;
+	margin-bottom: -50%;
+	margin-left: 50%;
+	z-index: 0;
+
+}

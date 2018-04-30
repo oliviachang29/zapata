@@ -1,0 +1,21 @@
+html, body {
+	height: 100%;
+  width: 100%;
+  margin: 0;
+}
+/*
+* {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+*/
+section {
+  
+}
+
+.vertical-center {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
