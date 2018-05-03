@@ -1,8 +1,9 @@
 jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
-
-	$('#cd-vertical-nav').hide();
+        header = $('header'),
+	// navigationItems.hide();
+  // contentSections.hide();
 
 	updateNavigation();
 	$(window).on('scroll', function(){
@@ -15,9 +16,15 @@ jQuery(document).ready(function($){
         smoothScroll($(this.hash));
     });
     //smooth scroll to second section
-    $('.cd-scroll-down').on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
+    $('#begin-button').on('click', function(event){
+      event.preventDefault();
+      header.fadeOut();
+      function contentFadeIn(){
+        // contentSections.fadeIn();
+        updateNavigation();
+      };
+      window.setTimeout( contentFadeIn, 1000 );
+      // smoothScroll($(this.hash));
     });
 
     //open-close navigation on touch devices
@@ -50,11 +57,11 @@ jQuery(document).ready(function($){
 	}
 });
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y > $(window).height() - 10) {
-    $('#cd-vertical-nav').fadeIn();
-  } else {
-    $('#cd-vertical-nav').fadeOut();
-  }
-});
+// $(document).scroll(function() {
+//   var y = $(this).scrollTop();
+//   if (y > $(window).height()) {
+//     $('#cd-vertical-nav').fadeIn();
+//   } else {
+//     $('#cd-vertical-nav').fadeOut();
+//   }
+// });

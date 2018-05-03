@@ -1,35 +1,5 @@
 /* -------------------------------- 
 
-Primary style
-
--------------------------------- */
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-a {
-  color: #3e3947;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* -------------------------------- 
-
 Modules - reusable parts of our design
 
 -------------------------------- */
@@ -52,52 +22,16 @@ Main components
   padding: 2em 0;
 }
 .cd-section:nth-of-type(odd) {
-  background-color: #3e3947;
+  background: url("/assets/images/pic.png");
 }
 .cd-section:nth-of-type(odd) p {
-  color: #898099;
+  /*color: #fff;*/
 }
 .cd-section:nth-of-type(even) {
-  background-color: #745360;
+  background: black;
 }
 .cd-section:nth-of-type(even) p {
-  color: #bda3ad;
-}
-.cd-section h1, .cd-section p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 768px;
-  text-align: center;
-}
-.cd-section h1 {
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-.cd-section p {
-  line-height: 1.6;
-}
-@media only screen and (min-width: 768px) {
-  .cd-section h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .cd-section p {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2;
-  }
+  /*color: white;*/
 }
 
 /* No Touch devices */
@@ -115,12 +49,11 @@ Main components
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
-  /*background: rgba(33,33,33,0.50);*/
   height: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  width: 7%;
+  width: 10%;
   font-family: PathwayGothicOne-Regular;
 }
 .no-touch #cd-vertical-nav li {
@@ -181,12 +114,12 @@ Main components
   transform-origin: 50% 50%;
 }
 .no-touch #cd-vertical-nav .cd-label {
+  top: 1.5px;
   left: 20px;
   position: relative;
   margin-right: 10px;
   padding: .4em .5em;
   color: white;
-  font-size: 14px;
   font-size: 0.875rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;

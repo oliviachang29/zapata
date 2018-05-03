@@ -1,63 +1,111 @@
 ---
 layout: default
 ---
-<header>
-	<div class="wrapper">
-		<!-- <img src="/assets/images/zapata.jpeg" id="header-img"> -->
-		<div id="header-text">
-			<h1 id="name">Emiliano<br>Zapata</h1>
-			<p id="name-description">Emiliano Zapata, (born August 8, 1879, Anenecuilco, Mexico—died April 10, 1919, Morelos), Mexican revolutionary, champion of agrarianism, who fought in guerrilla actions during and after the Mexican Revolution (1910–20).</p>
-			<!-- <btn href="#section2" class="cd-scroll-down btn" id="begin-button">begin</btn> -->
-			<a href="#section1" class="cd-scroll-down" id="begin-button">begin</a>
-		</div>
-		
-	</div>
-</header>
-
+{% include header.html %}
 <nav id="cd-vertical-nav">
 	<ul id="dots">
 		<li><a href="#section1" data-number="1">
-			<span class="cd-label">1910</span>
+			<span class="cd-label">Network</span>
 			<span class="cd-dot"></span>
 		</a></li>
 		<li><a href="#section2" data-number="2">
-			<span class="cd-label">1911</span>
+			<span class="cd-label">The Big Four</span>
 			<span class="cd-dot"></span>
 		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
+		<li><a href="#section3" data-number="3">
+			<span class="cd-label">Family Tree</span>
 			<span class="cd-dot"></span>
 		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section3" data-number="3">		
-			<span class="cd-label">1912</span>
+		<li><a href="#section4" data-number="4">
+			<span class="cd-label">Timeline</span>
 			<span class="cd-dot"></span>
 		</a></li>
 	</ul>
 </nav>
-<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
-
 <section id="section1" class="cd-section">
-	<h1>Vertical Fixed Navigation</h1>
 </section>
 <section id="section2" class="cd-section">
-	<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-</section>
-<section id="section3" class="cd-section">
-	<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-</section>
+	<div>
+		<h1 class="section-header" id="section2-header">The Big Four</h1>
+		
+		<div id="card-holder">
+			<div class="card" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor="#section1">
+				<img class="card-img-top" src="/assets/images/big4/obregon.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title">Álvaro Obregón</h2>
+					<p class="card-text">A general in the Mexican Revolution, who became President of Mexico from 1920 to 1924. He supported Sonora's decision to follow Governor of Coahuila Venustiano Carranza as leader of a revolution against the Huerta regime.</p>
+				</div>
+			</div>
+			<div class="card" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#section1">
+				<img class="card-img-top" src="/assets/images/big4/carranza.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title">Venustiano Carranza</h2>
+					<p class="card-text">A leader in the Mexican civil war following the overthrow of the dictator Porfirio Díaz. Carranza became the first president of the new Mexican republic.</p>
+				</div>
+			</div>
+			<div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#section1">
+				<img class="card-img-top" src="/assets/images/big4/villa.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title">Francisco Villa</h2>
+					<p class="card-text">A Mexican Revolutionary general and one of the most prominent figures of the Mexican Revolution.</p>
+				</div>
+			</div>
+			<div class="card" data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#section1">
+				<img class="card-img-top" src="/assets/images/big4/zapata.jpg" alt="Card image cap">
+				<div class="card-body">
+					<h2 class="card-title">Emiliano Zapata</h2>
+					<p class="card-text">A leading figure in the Mexican Revolution, the main leader of the peasant revolution in the state of Morelos, and the inspiration of the agrarian movement called Zapatismo.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="section3" class="cd-section">
+		<!--
+		We will create a family tree using just CSS(3)
+		The markup will be simple nested lists
+		-->
+		<div class="tree">
+			<ul>
+				<li><a href="#">Cristino Zapata</a></li>
+				<li><a href="#">José Zapata</a></li>
+				<li>
+					<a href="#">Gabriel Zapata</a>
+					<ul>
+						<li>
+							<a href="#">Child</a>
+							<ul>
+								<li>
+									<a href="#">Grand Child</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Emiliano Zapata</a>
+							<ul>
+								<li><a href="#">Grand Child</a></li>
+								<li>
+									<a href="#">Grand Child</a>
+									<ul>
+										<li>
+											<a href="#">Great Grand Child</a>
+										</li>
+										<li>
+											<a href="#">Great Grand Child</a>
+										</li>
+										<li>
+											<a href="#">Great Grand Child</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#">Grand Child</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Cleofas Salazar</a></li>
+			</ul>
+		</div>
+	</section>
+	<section id="section4" class="cd-section">
+		
+	</section>
