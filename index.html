@@ -5,107 +5,32 @@ layout: default
 <nav id="cd-vertical-nav">
 	<ul id="dots">
 		<li><a href="#section1" data-number="1">
-			<span class="cd-label">Network</span>
+			<span class="cd-label">Intro</span>
 			<span class="cd-dot"></span>
 		</a></li>
 		<li><a href="#section2" data-number="2">
-			<span class="cd-label">The Big Four</span>
+			<span class="cd-label">Background</span>
 			<span class="cd-dot"></span>
 		</a></li>
 		<li><a href="#section3" data-number="3">
-			<span class="cd-label">Family Tree</span>
+			<span class="cd-label">Birth</span>
 			<span class="cd-dot"></span>
 		</a></li>
 		<li><a href="#section4" data-number="4">
-			<span class="cd-label">Timeline</span>
+			<span class="cd-label">The Big Four</span>
 			<span class="cd-dot"></span>
 		</a></li>
 	</ul>
 </nav>
 <section id="section1" class="cd-section">
+	<p class="section-center">In 1879, Mexico justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.<br><br>Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 </section>
 <section id="section2" class="cd-section">
-	<div>
-		<h1 class="section-header" id="section2-header">The Big Four</h1>
-		
-		<div id="card-holder">
-			<div class="card" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor="#section1">
-				<img class="card-img-top" src="/assets/images/big4/obregon.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title">Álvaro Obregón</h2>
-					<p class="card-text">A general in the Mexican Revolution, who became President of Mexico from 1920 to 1924. He supported Sonora's decision to follow Governor of Coahuila Venustiano Carranza as leader of a revolution against the Huerta regime.</p>
-				</div>
-			</div>
-			<div class="card" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#section1">
-				<img class="card-img-top" src="/assets/images/big4/carranza.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title">Venustiano Carranza</h2>
-					<p class="card-text">A leader in the Mexican civil war following the overthrow of the dictator Porfirio Díaz. Carranza became the first president of the new Mexican republic.</p>
-				</div>
-			</div>
-			<div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#section1">
-				<img class="card-img-top" src="/assets/images/big4/villa.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title">Francisco Villa</h2>
-					<p class="card-text">A Mexican Revolutionary general and one of the most prominent figures of the Mexican Revolution.</p>
-				</div>
-			</div>
-			<div class="card" data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#section1">
-				<img class="card-img-top" src="/assets/images/big4/zapata.jpg" alt="Card image cap">
-				<div class="card-body">
-					<h2 class="card-title">Emiliano Zapata</h2>
-					<p class="card-text">A leading figure in the Mexican Revolution, the main leader of the peasant revolution in the state of Morelos, and the inspiration of the agrarian movement called Zapatismo.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="section3" class="cd-section">
-		<!--
-		We will create a family tree using just CSS(3)
-		The markup will be simple nested lists
-		-->
-		<div class="tree">
-			<ul>
-				<li><a href="#">Cristino Zapata</a></li>
-				<li><a href="#">José Zapata</a></li>
-				<li>
-					<a href="#">Gabriel Zapata</a>
-					<ul>
-						<li>
-							<a href="#">Child</a>
-							<ul>
-								<li>
-									<a href="#">Grand Child</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Emiliano Zapata</a>
-							<ul>
-								<li><a href="#">Grand Child</a></li>
-								<li>
-									<a href="#">Grand Child</a>
-									<ul>
-										<li>
-											<a href="#">Great Grand Child</a>
-										</li>
-										<li>
-											<a href="#">Great Grand Child</a>
-										</li>
-										<li>
-											<a href="#">Great Grand Child</a>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Grand Child</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#">Cleofas Salazar</a></li>
-			</ul>
-		</div>
-	</section>
-	<section id="section4" class="cd-section">
-		
-	</section>
+	{% include background-diaz.html %}
+</section>
+<section id="section3" class="cd-section">
+		<p class="section-center">“Men of the South! It is better to die on your feet than to live on your knees!”</p>
+</section>
+<section id="section4" class="cd-section">
+	{% include big_four.html %}
+</section>

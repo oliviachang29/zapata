@@ -10,6 +10,12 @@
    src: url('/assets/fonts/Cardo-Regular.ttf');
 } 
 
+@font-face {
+   font-family: HarrietDisplay-BoldItalic;
+   font-weight: 100;
+   src: url('/assets/fonts/harriet_display_bold_italic.ttf');
+} 
+
 h2 {
 	text-align: center;
 }
@@ -20,7 +26,6 @@ span {
 }
 
 p {
-
 }
 
 a {

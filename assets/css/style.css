@@ -21,18 +21,6 @@ Main components
   position: relative;
   padding: 2em 0;
 }
-.cd-section:nth-of-type(odd) {
-  background: url("/assets/images/pic.png");
-}
-.cd-section:nth-of-type(odd) p {
-  /*color: #fff;*/
-}
-.cd-section:nth-of-type(even) {
-  background: black;
-}
-.cd-section:nth-of-type(even) p {
-  /*color: white;*/
-}
 
 /* No Touch devices */
 .cd-nav-trigger {
