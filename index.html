@@ -20,16 +20,24 @@ layout: default
 			<span class="cd-label">The Big Four</span>
 			<span class="cd-dot"></span>
 		</a></li>
+		<li><a href="#section5" data-number="5">
+			<span class="cd-label"></span>
+			<span class="cd-dot"></span>
+		</a></li>
 	</ul>
 </nav>
-<section id="section1" class="cd-section">
+<div id="anchor1"></div>
+<section id="section1" class="cd-section" data-parallax="scroll" data-image-src="/assets/images/pic2.jpg" data-image-speed="0.05">
 	<p class="section-center">In 1879, Mexico justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.<br><br>Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 </section>
+<div id="anchor2"></div>
 <section id="section2" class="cd-section">
 	{% include background-diaz.html %}
 </section>
+<div id="anchor3"></div>
 <section id="section3" class="cd-section">
-		<p class="section-center">“Men of the South! It is better to die on your feet than to live on your knees!”</p>
+	{% include timeline.html %}
+	
 </section>
 <section id="section4" class="cd-section">
 	{% include big_four.html %}

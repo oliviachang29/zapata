@@ -43,9 +43,11 @@ Main components
   text-align: center;
   width: 10%;
   font-family: PathwayGothicOne-Regular;
+  text-transform: uppercase;
 }
 .no-touch #cd-vertical-nav li {
   text-align: left;
+
 }
 .no-touch #cd-vertical-nav a {
   display: inline-block;
@@ -73,6 +75,7 @@ Main components
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+  font-size: 20px;
 }
 
 .no-touch #cd-vertical-nav a:hover .cd-label {

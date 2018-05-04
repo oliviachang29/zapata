@@ -1,0 +1,104 @@
+/*--------------
+	BACKGROUND
+--------------*/
+#section2 {
+	overflow: hidden;
+	padding-bottom: 12%;
+	background: url("/assets/images/railroad.jpg");
+	background-attachment: fixed;
+    background-position: 0% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section2-header {
+	margin-bottom: 5%;
+}
+
+#diaz-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#diaz-img-container {
+	margin-bottom: 30px;
+}
+
+#diaz-img {
+	box-shadow: 10px 10px rgba(216,216,216,0.50);
+	width: 300px;
+}
+
+#diaz-img-name {
+	margin-top: 30px;
+	font-family: PathwayGothicOne-Regular;
+	font-size: 48px;
+	color: #000000;
+	letter-spacing: -0.9px;
+	text-align: center;
+}
+
+#diaz-img-date {
+	text-align: center;
+	margin-top: 15px;
+	font-family: Cardo-Regular;
+}
+
+.white-bg-text {
+	font-family: Cardo-Regular;
+	width: 472px;
+	line-height: 29px;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+
+#diaz-reasons {
+	margin: 0 auto;
+	width: 60%;
+  left: 50%;
+}
+
+.diaz-reason {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+}
+
+#diaz-reason-2 {
+	flex-direction: row-reverse;
+}
+
+.diaz-reason-title1 {
+	/* ONE: */
+	opacity: 0.10;
+	font-family: HarrietDisplay-BoldItalic;
+	font-size: 110px;
+	color: #000000;
+	letter-spacing: -2.7px;
+	text-transform: uppercase;
+}
+
+.diaz-reason-title2 {
+	/* CORRUPTION: */
+	font-family: PathwayGothicOne-Regular;
+	font-size: 35px;
+	color: #000000;
+	letter-spacing: -0.9px;
+	text-transform: uppercase;
+	margin-top: -35px;
+	text-align: right;
+}
+
+#diaz-reason-title2-2 {
+	text-align: left;
+}
+
+.diaz-reason-text {
+	align-self: center;
+	/*width: 400px;*/
+}
+
+#diaz-reason-text-2 {
+	text-align: left;
+	margin-right: 30px;
+}

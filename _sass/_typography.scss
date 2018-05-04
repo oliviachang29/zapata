@@ -1,31 +1,17 @@
-@font-face {
-   font-family: PathwayGothicOne-Regular;
-   font-weight: 100;
-   src: url('/assets/fonts/PathwayGothicOne-Regular.ttf');
-} 
-
-@font-face {
-   font-family: Cardo-Regular;
-   font-weight: 100;
-   src: url('/assets/fonts/Cardo-Regular.ttf');
-} 
-
+@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
 @font-face {
    font-family: HarrietDisplay-BoldItalic;
    font-weight: 100;
    src: url('/assets/fonts/harriet_display_bold_italic.ttf');
 } 
 
-h2 {
-	text-align: center;
+h1, h2 {
+	font-family: PathwayGothicOne-Regular;
 }
 
-span {
-	font-size: 16px;
-	font-weight: 200;
-}
 
-p {
+a, p, span {
+	font-family: Cardo;
 }
 
 a {
