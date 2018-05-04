@@ -42,7 +42,7 @@ Main components
   align-items: center;
   text-align: center;
   width: 10%;
-  font-family: PathwayGothicOne-Regular;
+  font-family: 'Pathway Gothic One';
   text-transform: uppercase;
 }
 .no-touch #cd-vertical-nav li {

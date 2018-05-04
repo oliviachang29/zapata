@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+#early-years-header {
+  margin-bottom: 10%;
+  margin-top: 0%;
+}
+
 #timeline-1 {
   background: url("/assets/images/pic.png");
   background-attachment: fixed;
@@ -17,7 +22,7 @@
   width: 100%;
   position: relative;
   padding: 80px 0;
-  transition: 0.3s ease 0s;
+  /*transition: 0.3s ease 0s;*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -83,7 +88,7 @@
   }
 }
 .timeline-item {
-  padding: 20% 0 10%;
+  padding: 10% 0 10%;
   transition: 0.5s;
   box-sizing: border-box;
   width: calc(50% - 40px);
@@ -98,17 +103,15 @@
   position: absolute;
   color: rgba(255, 255, 255, .5);
   font-size: 13px;
-  font-family: 'Pathway Gothic One', sans-serif;
-  border-left: 2px solid rgba(255, 255, 255, .5);
   padding-left: 15px;
   opacity: 0;
   right: calc(-100% - 56px);
-
   font-weight: normal;
   font-size: 66px;
   box-sizing: border-box;
   font-family: 'Pathway Gothic One', sans-serif;
   color: #fff;
+  font-size: 36px;
 }
 .timeline-item:nth-child(even) {
   align-self: flex-end;
@@ -119,18 +122,16 @@
   left: calc(-100% - 56px);
   padding-left: 0;
   border-left: none;
-  border-right: 2px solid rgba(255, 255, 255, .5);
   padding-right: 15px;
 }
 
 .timeline-item--active:before {
   top: 50%;
   transition: 0.3s all 0.2s;
-  opacity: 1;
+  opacity: 0.9;
+  
 }
-.timeline-item--active .timeline__content-title {
-  margin: -50px 0 20px 0;
-}
+
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;
@@ -174,7 +175,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .3s ease-in;
+  transition: .25s linear;
   background-color: #000;
 }
 
@@ -183,7 +184,7 @@
   font-size: 30px;
   margin: 0 auto;
   text-align: center;
-  font-family: PathwayGothicOne-Regular;
+  font-family: 'Pathway Gothic One';
   text-transform: uppercase;
   margin-top: 30%;
   width: 90%;
@@ -201,5 +202,9 @@
 }
 
 .image-hover-container:hover .overlay {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+#morelos-map-img {
+  margin-bottom: 20%;
 }
