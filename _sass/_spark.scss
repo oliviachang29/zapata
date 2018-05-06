@@ -1,41 +1,41 @@
+#section4 {
+  background-color: white;
+  min-height: 190%;
+  padding-bottom: 0;
+}
+
+#spark-header {
+    margin-bottom: 10%;
+}
+
 /* MAP */
-#map-c {
+#map-constraint {
+    /* update spark-all-text-container as height changes */
+    height: 600px;
+}
+
+#map {
 	margin-left: 10%;
 }
 
 #map-container {
     position:relative;
     width: 960px;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
 }
 
 .map-base {
-    width: 50px;
-    /*height: 100%;*/
     position: absolute;
-}
-
-#container.pop-container-a img { 
-    position: absolute;
+    margin-bottom: 100px;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    background-color: #4A4A4A;
+    background-color: #D0021B;
     z-index: 10;
     border-radius: 50%;
 }
-
-.pop-container-a img { 
-    position:absolute;
-    opacity: 0;
-    width: 150px;
-    transition: opacity .5s ease;
-}
-
 .gone {
 	position:absolute;
     opacity: 0;
@@ -95,15 +95,10 @@
 
 /* TEXT */
 
-#spark-header {
-	margin-bottom: 10%;
-}
-
 #spark-all-text-container {
-	margin-top: -3%;
+	margin-top: -600px;
 	width: 47%;
 	float: right;
-
 }
 
 .spark-indv-text-container {

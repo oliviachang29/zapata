@@ -1,6 +1,16 @@
 /*--------------
 	BACKGROUND
 --------------*/
+#section2 {
+  overflow: hidden;
+  padding-bottom: 7%;
+  background: url("/assets/images/railroad.jpg");
+  background-attachment: fixed;
+    background-position: 0% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #section2-header {
 	margin-bottom: 5%;
 }
@@ -36,14 +46,6 @@
 	font-family: 'Cardo';
 }
 
-.white-bg-text {
-	font-family: 'Cardo';
-	width: 472px;
-	line-height: 29px;
-	margin-left: 50px;
-	margin-top: 15px;
-}
-
 #diaz-desc-text {
 	/*margin-top: 4%;*/
 }
@@ -76,4 +78,18 @@
 #diaz-reason-text-2 {
 	text-align: left;
 	margin-right: 30px;
+}
+
+#diaz-zapata-birth-container {
+	width: 40%;
+	margin: 0 auto;
+}
+
+#diaz-zapata-birth {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	margin-top: 10%;
+	font-size: 20px;
+	line-height: 30px;
 }

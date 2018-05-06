@@ -18,14 +18,71 @@ body, html {
   background-color: black;
 }
 
-section {
-  
+/* Intro */
+#section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/independence.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.vertical-center {
-	display: flex;
-  align-items: center;
-  justify-content: center;
+#section1-center {
+  font-size: 24px;
+  line-height: 40px;
+  width: 70%;
+}
+
+.section-center {
+  color: white;
+  font-family: 'Cardo';
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
   text-align: center;
 }
 
+.white-bg-text {
+  font-family: 'Cardo';
+  width: 472px;
+  line-height: 29px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.dark-bg-header {
+  color: white;
+  background-color: transparent;
+}
+
+.title1 {
+  /* ONE: */
+  opacity: 0.10;
+  font-family: HarrietDisplay-BoldItalic;
+  font-size: 110px;
+  color: #000000;
+  letter-spacing: -2.7px;
+  text-transform: uppercase;
+}
+
+.title2 {
+  /* CORRUPTION: */
+  font-family: 'Pathway Gothic One';
+  font-size: 35px;
+  color: #000000;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  margin-top: -35px;
+  text-align: right;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}

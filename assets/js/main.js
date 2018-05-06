@@ -11,13 +11,13 @@ jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
     header = $('header'),
-    map = $('#map-c'),
+    map = $('#map'),
     map_texts = $('.spark-indv-text-container'),
     bigfour = $('#section5'),
     bigfour_top = bigfour.offset().top,
 
-	navigationItems.hide();
-  contentSections.hide();
+	// navigationItems.hide();
+  // contentSections.hide();
   
   map.stick_in_parent({
     offset_top: $(window).height()/5
@@ -80,9 +80,9 @@ $(document).scroll(function() {
   }
 
   if (y > bigfour_top - 500) {
-    $('#map-c').fadeOut();
+    // $('#map-c').fadeOut();
   } else {
-    $('#map-c').fadeIn();
+    // $('#map-c').fadeIn();
   }
 
   var c = 1;
