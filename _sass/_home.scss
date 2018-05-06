@@ -1,12 +1,38 @@
-.section-center {
-	font-size: 24px;
-	color: white;
-	font-family: 'Cardo';
-	line-height: 38px;
+/* Intro */
+#section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/independence.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-	position: absolute;
+/* Background Diaz */
+#section2 {
+  overflow: hidden;
+  padding-bottom: 12%;
+  background: url("/assets/images/railroad.jpg");
+  background-attachment: fixed;
+    background-position: 0% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Timeline */
+#section3 {
+  padding: 0;
+}
+
+/* The Spark */
+#section4 {
+  background-color: white;
+  min-height: 220%;
+}
+
+.section-center {
+  color: white;
+  font-family: 'Cardo';
+  position: absolute;
   left: 50%;
-  top: 50%;
+  top: 47%;
   bottom: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -15,70 +41,43 @@
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   width: 90%;
-  max-width: 768px;
   text-align: center;
 }
+
+#section1-center {
+	font-size: 24px;
+	line-height: 36px;
+  width: 70%;
+}
+
 
 .dark-bg-header {
 	color: white;
 	background-color: transparent;
 }
 
-/*--------------
-		BIG FOUR
---------------*/
-
-#card-holder {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
-}
-
-.card {
-	width: 20%;
-	margin: 0 1.25%;
-	height: 100%;
-	padding: 20px;
-	/*align-self: center;*/
-}
-
-.section-header {
-	text-align: center;
-	margin-top: 3%;
-	margin-bottom: 3%;
+.title1 {
+  /* ONE: */
+  opacity: 0.10;
+  font-family: HarrietDisplay-BoldItalic;
+  font-size: 110px;
+  color: #000000;
+  letter-spacing: -2.7px;
   text-transform: uppercase;
+}
+
+.title2 {
+  /* CORRUPTION: */
   font-family: 'Pathway Gothic One';
-  font-size: 72px;
-  letter-spacing: 0;
+  font-size: 35px;
+  color: #000000;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  margin-top: -35px;
+  text-align: right;
 }
 
-#bigfour-header {
-	color: #FFF;
+.title-container {
+  display: flex;
+  flex-direction: column;
 }
-
-.card-title {
-	color: #FFF;
-	font-family: 'Pathway Gothic One';
-	text-transform: uppercase;
-	font-size: 30px;
-	text-align: left;
-	margin-bottom: 15px;
-}
-
-.card-text {
-	font-family: 'Cardo';
-	font-size: 14px;
-	color: #F5F5F5;
-	text-align: left;
-	line-height: 23px;
-	width: 95%;
-}
-
-.card-img-top {
-	width: 100%;
-	height: 250px;
-	margin-bottom: 20px;
-	object-fit: cover;
-}
-
-

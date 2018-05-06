@@ -1,15 +1,6 @@
 /*--------------
 	BACKGROUND
 --------------*/
-#section2 {
-	overflow: hidden;
-	padding-bottom: 12%;
-	background: url("/assets/images/railroad.jpg");
-	background-attachment: fixed;
-    background-position: 0% 60%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 #section2-header {
 	margin-bottom: 5%;
 }
@@ -36,6 +27,7 @@
 	color: #000000;
 	letter-spacing: -0.9px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #diaz-img-date {
@@ -52,6 +44,10 @@
 	margin-top: 15px;
 }
 
+#diaz-desc-text {
+	/*margin-top: 4%;*/
+}
+
 #diaz-reasons {
 	margin: 0 auto;
 	width: 60%;
@@ -66,27 +62,6 @@
 
 #diaz-reason-2 {
 	flex-direction: row-reverse;
-}
-
-.diaz-reason-title1 {
-	/* ONE: */
-	opacity: 0.10;
-	font-family: HarrietDisplay-BoldItalic;
-	font-size: 110px;
-	color: #000000;
-	letter-spacing: -2.7px;
-	text-transform: uppercase;
-}
-
-.diaz-reason-title2 {
-	/* CORRUPTION: */
-	font-family: 'Pathway Gothic One';
-	font-size: 35px;
-	color: #000000;
-	letter-spacing: -0.9px;
-	text-transform: uppercase;
-	margin-top: -35px;
-	text-align: right;
 }
 
 #diaz-reason-title2-2 {

@@ -1,0 +1,112 @@
+/* MAP */
+#map-c {
+	margin-left: 10%;
+}
+
+#map-container {
+    position:relative;
+    width: 960px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.map-base {
+    width: 50px;
+    /*height: 100%;*/
+    position: absolute;
+}
+
+#container.pop-container-a img { 
+    position: absolute;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #4A4A4A;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.pop-container-a img { 
+    position:absolute;
+    opacity: 0;
+    width: 150px;
+    transition: opacity .5s ease;
+}
+
+.gone {
+	position:absolute;
+    opacity: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 20px #CECECE;
+    transition: opacity .5s ease;
+    font-family: Cardo;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.dot:hover + .gone { 
+    opacity: 1;
+}
+
+.pop-container {
+	position: absolute;
+	display: inline-block;
+}
+
+#gone-1 {
+	width: 200px;
+    margin-top: -180px;
+    margin-left: -100px;
+}
+
+#pop-container-1 {
+    /* positions dot */
+    top: 245px;
+    left: 315px;
+}
+
+#gone-2 {
+	width: 200px;
+    margin-top: -120px;
+    margin-left: -100px;
+}
+
+#pop-container-2 {
+    /* positions dot */
+    top: 50px;
+    left: 350px;
+}
+
+/* TEXT */
+
+#spark-header {
+	margin-bottom: 10%;
+}
+
+#spark-all-text-container {
+	margin-top: -3%;
+	width: 47%;
+	float: right;
+
+}
+
+.spark-indv-text-container {
+	margin-bottom: 25%;
+}
+
+.spark-title-container{
+	min-width: 50px;
+	margin-left: 50px;
+}
+
+.spark-title2 {
+	text-align: left;
+}
+
+.spark-desc-text {
+	margin-bottom: 5%;
+}

@@ -2,32 +2,9 @@
 layout: default
 ---
 {% include header.html %}
-<nav id="cd-vertical-nav">
-	<ul id="dots">
-		<li><a href="#section1" data-number="1">
-			<span class="cd-label">Intro</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section2" data-number="2">
-			<span class="cd-label">Background</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section3" data-number="3">
-			<span class="cd-label">Early Years</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section4" data-number="4">
-			<span class="cd-label">The Big Four</span>
-			<span class="cd-dot"></span>
-		</a></li>
-		<li><a href="#section5" data-number="5">
-			<span class="cd-label"></span>
-			<span class="cd-dot"></span>
-		</a></li>
-	</ul>
-</nav>
-<section id="section1" class="cd-section" data-parallax="scroll" data-image-src="/assets/images/pic2.jpg" data-image-speed="0.05">
-	<p class="section-center">In 1879, Mexico justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.<br><br>Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+{% include nav.html %}
+<section id="section1" class="cd-section">
+	{% include intro.html %}
 </section>
 <section id="section2" class="cd-section">
 	{% include background-diaz.html %}
@@ -36,5 +13,8 @@ layout: default
 	{% include timeline.html %}
 </section>
 <section id="section4" class="cd-section">
+	{% include spark.html %}
+</section>
+<section id="section5" class="cd-section">
 	{% include big_four.html %}
 </section>
