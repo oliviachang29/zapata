@@ -1,21 +1,30 @@
 #section4 {
   background-color: white;
-  min-height: 190%;
+  min-height: 1700px;
   padding-bottom: 0;
 }
 
 #spark-header {
-    margin-bottom: 10%;
+    margin: 4% 0 6%;
 }
 
 /* MAP */
 #map-constraint {
     /* update spark-all-text-container as height changes */
-    height: 600px;
+    /* also, update section4 px height */
+    height: 900px;
 }
 
 #map {
-	margin-left: 10%;
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      margin-left: 5%;
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      margin-left: 10%;
+    }
 }
 
 #map-container {
@@ -36,7 +45,7 @@
     z-index: 10;
     border-radius: 50%;
 }
-.gone {
+.tooltip {
 	position:absolute;
     opacity: 0;
     padding: 20px;
@@ -46,9 +55,21 @@
     font-family: Cardo;
     font-size: 14px;
     line-height: 18px;
+    z-index: 1000;
+    width: 200px;
+}
+.tooltip p::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
 }
 
-.dot:hover + .gone { 
+.dot:hover + .tooltip { 
     opacity: 1;
 }
 
@@ -57,46 +78,28 @@
 	display: inline-block;
 }
 
-#gone-1 {
-	width: 200px;
-    margin-top: -180px;
-    margin-left: -100px;
-}
-
 #pop-container-1 {
-    /* positions dot */
-    top: 245px;
-    left: 315px;
-}
-
-#gone-2 {
-	width: 200px;
-    margin-top: -120px;
-    margin-left: -100px;
+    /* positions container */
+    top: 185px;
+    left: 185px;   
 }
 
 #pop-container-2 {
-    /* positions dot */
-    top: 50px;
-    left: 350px;
-}
-
-#gone-3 {
-	width: 200px;
-    margin-top: -120px;
-    margin-left: -100px;
+    /* positions container */
+    top: -60px;
+    left: 225px;
 }
 
 #pop-container-3 {
-    /* positions dot */
-    top: 100px;
-    left: 300px;
+    /* positions container */
+    top: 205px;
+    left: 230px;
 }
 
 /* TEXT */
 
 #spark-all-text-container {
-	margin-top: -600px;
+	margin-top: -900px;
 	width: 47%;
 	float: right;
 }

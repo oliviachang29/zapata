@@ -2,6 +2,14 @@
 		BIG FOUR
 --------------*/
 
+#section5 {
+	background: url("/assets/images/pic.jpg");
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #card-holder {
 	display: flex;
 	flex-direction: row-reverse;

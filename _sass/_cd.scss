@@ -1,7 +1,11 @@
 .cd-section {
-  min-height: 100%;
+  min-height: 100%; /*800px;*/
   position: relative;
   padding: 2em 0;
+  overflow-y: hidden;
+  @media only screen and (max-width : 768px) {
+    display: none;
+  }
 }
 
 /* No Touch devices */

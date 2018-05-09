@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
   // contentSections.hide();
   
   map.stick_in_parent({
-    offset_top: $(window).height()/5
+    offset_top: $(window).height()/8
   });
 
 	updateNavigation();
@@ -89,11 +89,11 @@ $(document).scroll(function() {
   map_texts.each(function(){
     $this = $(this);
     if ((!$('#spark-' + c).is(':offscreen'))) {
-      $('#gone-' + c).css({
+      $('#tooltip-' + c).css({
           opacity: '1'
       });
     } else {
-      $('#gone-' + c).css({
+      $('#tooltip-' + c).css({
           opacity: '0'
       });
     }
