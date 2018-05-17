@@ -2,9 +2,10 @@
   min-height: 100%; /*800px;*/
   position: relative;
   padding: 2em 0;
+  padding-bottom: 4em;
   overflow-y: hidden;
   @media only screen and (max-width : 768px) {
-    display: none;
+    /*display: none;*/
   }
 }
 

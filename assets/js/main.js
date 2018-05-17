@@ -23,6 +23,10 @@ jQuery(document).ready(function($){
     offset_top: $(window).height()/8
   });
 
+  $('#test-container').stick_in_parent({
+    offset_top: $(window).height()/8
+  });
+
 	updateNavigation();
 	$(window).on('scroll', function(){
 		updateNavigation();
@@ -100,3 +104,4 @@ $(document).scroll(function() {
     c++;
   });
 });
+

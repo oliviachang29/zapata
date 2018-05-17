@@ -15,12 +15,6 @@
 	margin-bottom: 5%;
 }
 
-.row-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
 #diaz-img-container {
 	margin-bottom: 30px;
 }
@@ -91,19 +85,16 @@
 }
 
 #diaz-zapata-birth-container {
-	
-	margin: 0 auto;
 	width: 60%;
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    width: 50%;
+  }
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-    	width: 50%;
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-    	width: 40%;
-    }
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    width: 40%;
+  }
 }
 
 #diaz-zapata-birth {

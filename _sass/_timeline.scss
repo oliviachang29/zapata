@@ -6,6 +6,7 @@
 }
 
 #early-years-header {
+  /* DO NOT CHANGE */
   margin-bottom: 10%;
   margin-top: 0%;
 }
@@ -65,12 +66,9 @@
 }
 .timeline__content-desc {
   margin: 0;
-  font-size: 15px;
   box-sizing: border-box;
-  color: #fff;
-  font-family: Cardo;
-  font-weight: normal;
-  line-height: 25px;
+  /*width: 0;*/
+  width: auto;
 }
 .timeline:before {
   position: absolute;
@@ -153,9 +151,7 @@
   max-width: 100%;
   filter: saturate(0);
   background: black;
-  opacity: 08;
   margin-bottom: 30px
-  /*box-shadow: 10px 10px rgba(216,216,216,0.05);*/
 }
 
 .timeline-header {
@@ -163,45 +159,6 @@
   text-align: center;
   margin-bottom: 80px;
   position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .25s linear;
-  background-color: #000;
-}
-
-.overlay-text {
-  color: #fff;
-  font-size: 30px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'Pathway Gothic One';
-  text-transform: uppercase;
-  margin-top: 30%;
-  width: 90%;
-}
-
-.image-hover-container {
-  position: relative;
-  width: 100%;
-}
-
-.image-hover-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.image-hover-container:hover .overlay {
-  opacity: 0.7;
 }
 
 #morelos-map-img {

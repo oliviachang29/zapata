@@ -1,0 +1,69 @@
+#section5 {
+	background: url("/assets/images/plan_de_ayala.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#plan-image-container {
+	margin-top: 5%;
+}
+
+#plan-intro {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.plan-title-container {
+	margin-bottom: 3%;
+}
+
+#plan-title-container-3 {
+	/*margin-top: 15%;*/
+}
+
+.plan-desc-container {
+	align-self: center;
+}
+
+.plan-title2 {
+	text-align: left;
+}
+
+.quote {
+	align-self: center;
+	font-family: HarrietDisplay-BoldItalic;
+	/* “having no intention: */
+	opacity: 0.3;
+	font-family: HarrietDisplay-BoldItalic;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 50px;
+	width: 45%;
+	margin-top: 5%;
+	
+}
+
+.quote-left {
+	margin-right: 5%;
+}
+
+.quote-right {
+	margin-left: 5%;
+}
+
+
+.plan-row-container {
+	margin: 5% 0%;
+	/*flex-direction: row-reverse !important;*/
+}
+
+#plan-de-ayala-pic-container {
+	height: 340px;
+    width: 457px;
+    align-self: center;
+    margin-right: 2%;
+}

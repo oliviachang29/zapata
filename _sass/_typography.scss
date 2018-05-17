@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Pathway+Gothic+One');
+
 @font-face {
    font-family: HarrietDisplay-BoldItalic;
    font-weight: 100;
@@ -6,18 +7,81 @@
 } 
 
 h1, h2 {
-	font-family: 'Pathway Gothic One';
+  font-family: 'Pathway Gothic One';
 }
 
 
 a, p, span {
-	font-family: Cardo;
+  font-family: Cardo;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
-	&:hover {
-		text-decoration: none;
-	}
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+i {
+  font-style: italic !important;
+}
+
+strong {
+  font-weight: 700 !important; 
+}
+
+.white-bg {
+	color: #4A4A4A;
+}
+
+.white-bg-text {
+  line-height: 29px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.dark-bg {
+	color: #E8E8E8 !important;
+}
+
+.normal-p {
+  font-family: Cardo;
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 16px;
+  width: 472px;
+}
+
+.title {
+  font-family: 'Pathway Gothic One';
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.title1 {
+  opacity: 0.10;
+  font-family: HarrietDisplay-BoldItalic;
+  font-size: 110px;
+  color: #000000;
+  letter-spacing: -2.7px;
+  text-transform: uppercase;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.title2 {
+  font-family: 'Pathway Gothic One';
+  font-size: 35px;
+  color: #000000;
+  letter-spacing: -0.9px;
+  text-transform: uppercase;
+  margin-top: -35px;
+  text-align: left;
 }

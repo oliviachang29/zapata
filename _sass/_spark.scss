@@ -1,18 +1,18 @@
 #section4 {
   background-color: white;
-  min-height: 1700px;
+  /*min-height: 1800px;*/
   padding-bottom: 0;
 }
 
 #spark-header {
-    margin: 4% 0 6%;
+    /*margin: 4% 0 6%;*/
 }
 
 /* MAP */
 #map-constraint {
     /* update spark-all-text-container as height changes */
     /* also, update section4 px height */
-    height: 900px;
+    height: 1500px;
 }
 
 #map {
@@ -23,7 +23,7 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-      margin-left: 10%;
+      margin-left: 7%;
     }
 }
 
@@ -96,10 +96,16 @@
     left: 230px;
 }
 
+#pop-container-4 {
+    /* positions container */
+    top: 230px;
+    left: 210px;
+}
+
 /* TEXT */
 
 #spark-all-text-container {
-	margin-top: -900px;
+	margin-top: -1450px;
 	width: 47%;
 	float: right;
 }
@@ -109,7 +115,6 @@
 }
 
 .spark-title-container{
-	min-width: 50px;
 	margin-left: 50px;
 }
 
@@ -119,4 +124,17 @@
 
 .spark-desc-text {
 	margin-bottom: 5%;
+}
+
+#section4-last {
+    background: white;
+    padding: 5% 0% 7%;
+    min-height: 3%;
+}
+
+#madero-newspaper-container {
+    height: 340px;
+    width: 457px;
+    align-self: center;
+    margin-right: 2%;
 }

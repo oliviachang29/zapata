@@ -1,6 +1,12 @@
-#key-players-header {
-	margin-bottom: 1%
+#section6 {
+  background-color: white;
+  min-height: 800px;
 }
+
+#key-players-header {
+	margin: 6% 0% 2%;
+}
+
 #zapata-network {
   height: 400px;
   margin-top: 2%;
@@ -8,9 +14,7 @@
   flex: 1;
   margin-right: -5%;
 }
-#section6 {
-  background-color: white;
-}
+
 #network-container {
 	justify-content: space-between;
 }
@@ -20,7 +24,7 @@
 	opacity: 0;
 	transition: .5s ease;
 	display: flex;
-	margin-top: -140px;
+	margin-top: -180px;
 	/*box-shadow: 0.5px 0.5px 20px #CECECE;*/
 }
 
@@ -36,12 +40,13 @@
 	font-family: 'Pathway Gothic One';
 	font-size: 30px;
 	text-transform: uppercase;
-	width: 430px;
+	width: 460px;
 	color: #9B9B9B;
 }
 
 #profile-img {
 	height: 250px;
+	width: 200px;
 	object-fit: cover;
 	box-shadow: 10px 10px rgba(216,216,216,0.50);
 }
@@ -54,14 +59,8 @@
 	text-align: center;
 }
 
-#profile-birthdeath {
-	font-family: 'Cardo';
-}
-
-#profile-relationship-to-zapata {
-	font-family: 'Pathway Gothic One';
-	text-transform: uppercase;
-	font-size: 30px;
+#profile-relationship-text {
+	margin-top: 15px;
 }
 .profile-text {
 	margin-top: 0;
