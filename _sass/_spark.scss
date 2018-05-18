@@ -12,7 +12,7 @@
 #map-constraint {
     /* update spark-all-text-container as height changes */
     /* also, update section4 px height */
-    height: 1500px;
+    height: 1800px;
 }
 
 #map {
@@ -102,10 +102,16 @@
     left: 210px;
 }
 
+#pop-container-5 {
+    /* positions container */
+    top: 225px;
+    left: 210px;
+}
+
 /* TEXT */
 
 #spark-all-text-container {
-	margin-top: -1450px;
+	margin-top: -1750px;
 	width: 47%;
 	float: right;
 }
