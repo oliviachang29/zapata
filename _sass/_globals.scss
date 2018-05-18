@@ -16,6 +16,7 @@ body, html {
   width: 100%;
   margin: 0;
   background-color: black;
+
 }
 .row-container {
   display: flex;
@@ -150,4 +151,8 @@ body, html {
 
 .row-container-reverse {
   flex-direction: row-reverse !important;
+}
+
+.darken-image {
+  filter: saturate(0) brightness(0.95);
 }

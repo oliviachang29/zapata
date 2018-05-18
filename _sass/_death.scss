@@ -1,0 +1,47 @@
+#section10 {
+  background: url("/assets/images/zapata_death_bg.jpg");
+  background-attachment: fixed;
+    background-position: 0% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.death-image-container {
+	width: 30%;
+	height: 350px;
+	margin-right: 40px;
+}
+
+.death-image-container img {
+	object-fit: cover;
+}
+.row-container-text {
+	margin-top: 2%;
+}
+
+.corridos-container {
+	margin: 7% 0%;
+}
+
+.corridos-container p {
+	color: #585858;
+	opacity: 1;
+	text-align: left;
+	width: auto;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 0;
+}
+
+.corridos-left {
+	margin-right: 50px;
+}
+
+.corridos-right {
+	margin-top: -30px !important;
+}
+
+.corridos-text-container {
+	margin-top: 10%;	
+	width: 400px;
+}

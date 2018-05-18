@@ -16,16 +16,16 @@ jQuery(document).ready(function($){
     bigfour = $('#section5'),
     bigfour_top = bigfour.offset().top,
 
-	// navigationItems.hide();
-  // contentSections.hide();
+	navigationItems.hide();
+  contentSections.hide();
   
   map.stick_in_parent({
     offset_top: $(window).height()/8
   });
 
-  $('#test-container').stick_in_parent({
-    offset_top: $(window).height()/8
-  });
+  // $('#test-container').stick_in_parent({
+  //   offset_top: $(window).height()/8
+  // });
 
 	updateNavigation();
 	$(window).on('scroll', function(){
