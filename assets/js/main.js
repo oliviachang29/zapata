@@ -9,21 +9,33 @@ jQuery.expr.filters.offscreen = function(el) {
 
 jQuery(document).ready(function($) {
     var contentSections = $('.cd-section'),
-        header = $('header'),
+        navigationItems = $('#cd-vertical-nav a');
+    header = $('header'),
         map = $('#map'),
         map_texts = $('.spark-indv-text-container'),
-        last_section = $('#section11')
+        bigfour = $('#section5'),
+        bigfour_top = bigfour.offset().top,
 
+        navigationItems.hide();
     contentSections.hide();
 
     map.stick_in_parent({
         offset_top: $(window).height() / 8
     });
 
+    // $('#test-container').stick_in_parent({
+    //   offset_top: $(window).height()/8
+    // });
 
     updateNavigation();
     $(window).on('scroll', function() {
         updateNavigation();
+    });
+
+    //smooth scroll to the section
+    navigationItems.on('click', function(event) {
+        event.preventDefault();
+        smoothScroll($(this.hash));
     });
 
     //smooth scroll to second section
@@ -33,6 +45,23 @@ jQuery(document).ready(function($) {
         smoothScroll($(this.hash));
     });
 
+    //smooth scroll to second section
+    $('#scroll-down').on('click', function(event) {
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+
+    function updateNavigation() {
+        contentSections.each(function() {
+            $this = $(this);
+            var activeSection = $('#cd-vertical-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
+            if (($this.offset().top - $(window).height() / 2 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 2 > $(window).scrollTop())) {
+                navigationItems.eq(activeSection).addClass('is-selected');
+            } else {
+                navigationItems.eq(activeSection).removeClass('is-selected');
+            }
+        });
+    }
 
     function smoothScroll(target) {
         $('body,html').animate({
