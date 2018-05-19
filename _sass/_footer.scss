@@ -1,0 +1,46 @@
+#footer {
+	min-height: 10%;
+}
+
+.footer-container {
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.footer-links-container {
+	/*flex: 1;*/
+}
+
+.footer-link {
+	/* BIBLIOGRAPHY: */
+	font-family: PathwayGothicOne-Regular;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 50px;
+	cursor: pointer;
+}
+
+.underline {
+  background-image: linear-gradient(120deg, #fff 0%, #fff 100%);
+  background-repeat: no-repeat;
+  background-size: 30% 12.5px;
+  background-position: 1% 200%;
+  transition: all 0.2s ease;
+  &:hover {
+    background-size: 100% 12.5px;
+    /*color: #000;*/
+  }
+}
+
+#footer-copyright {
+	font-size: 14px;	
+	/*flex: 5;*/
+}
+
+#bibliography {
+	color: white;
+}
