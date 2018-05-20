@@ -7,6 +7,8 @@ jQuery.expr.filters.offscreen = function(el) {
          );
 };
 
+window.addEventListener('load', AOS.refresh());
+
 jQuery(document).ready(function($){
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
@@ -43,6 +45,7 @@ jQuery(document).ready(function($){
       contentSections.show();
       event.preventDefault();
       smoothScroll($(this.hash));
+      AOS.refresh()
     });
 
     //smooth scroll to second section
