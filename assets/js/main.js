@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
     bigfour_top = bigfour.offset().top,
 
 	navigationItems.hide();
-  contentSections.hide();
+  // contentSections.hide();
   
   map.stick_in_parent({
     offset_top: $(window).height()/8

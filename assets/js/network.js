@@ -1,7 +1,7 @@
 var people = [
   {src: '../assets/images/people/zapata.jpg', name: "Emiliano Zapata"},
   {src: '../assets/images/people/huerta.jpg', name: "Victoriano Huerta", 
-    desc: "Born to poor peasants, Huerta rose to the rank of general under Díaz, who he admired. As general, he suppressed uprisings and defended Díaz until his resignation in 1911. He served under Madero as chief of staff of the army, but secretly plotted Madero’s assassination. When Madero was assassinated on his orders, he assumed a despotic rule over Mexico, dissolving the congress and establishing a dictatorship. After heavy opposition, Huerta fled to the US in 1915.", 
+    desc: "Born to poor peasants, Huerta rose to the rank of general under Díaz, whom he admired. As general, he suppressed uprisings and defended Díaz until his resignation in 1911. He served under Madero as chief of staff of the army, but secretly plotted Madero’s assassination. When Madero was assassinated on his orders, he assumed a despotic rule over Mexico, dissolving the congress and establishing a dictatorship. After heavy opposition, Huerta fled to the US in 1915.", 
     relationship: "Enemy. Zapata hated Huerta's conservatism and his many atrocities in southern Mexico."},
   {src: '../assets/images/people/obregon.jpg', name: "Álvaro Obregón", 
     desc: "A military genius despite his humble upbringing, Obregón did not participate in Díaz’s ouster, but fought for Madero against Orozco’s rebellion. After Madero’s assassination, he joined forces with Carranza against Huerta, and continued to fight against Villa and Zapata. He became disillusioned with Carranza’s policies and ran successfully for president in 1920. He was assassinated before taking the presidency a second term in 1928.", 

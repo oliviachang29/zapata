@@ -25,12 +25,11 @@
 
 .corridos-container p {
 	color: #585858;
-	opacity: 1;
 	text-align: left;
 	width: auto;
 	font-size: 20px;
 	line-height: 32px;
-	margin-top: 0;
+	margin-top: 15px;
 }
 
 .corridos-left {
@@ -38,10 +37,15 @@
 }
 
 .corridos-right {
-	margin-top: -30px !important;
+
 }
 
 .corridos-text-container {
 	margin-top: 10%;	
 	width: 400px;
+}
+
+.corridos {
+	align-self: start;
+	opacity: 0.8;
 }

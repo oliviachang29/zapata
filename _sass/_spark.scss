@@ -1,11 +1,10 @@
-#section4 {
-  background-color: white;
-  /*min-height: 1800px;*/
-  padding-bottom: 0;
-}
-
-#spark-header {
-    /*margin: 4% 0 6%;*/
+#section5 {
+    background: url("/assets/images/spark.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
 }
 
 /* MAP */
@@ -37,6 +36,9 @@
     margin-bottom: 100px;
 }
 
+#map-image {
+}
+
 .dot {
     width: 10px;
     height: 10px;
@@ -50,7 +52,7 @@
     opacity: 0;
     padding: 20px;
     background-color: white;
-    box-shadow: 0.5px 0.5px 20px #CECECE;
+    box-shadow: 0.3px 0.3px 20px #AAAAAA;
     transition: opacity .5s ease;
     font-family: Cardo;
     font-size: 14px;
@@ -111,7 +113,7 @@
 /* TEXT */
 
 #spark-all-text-container {
-	margin-top: -1750px;
+	margin-top: -1800px;
 	width: 47%;
 	float: right;
 }
@@ -124,12 +126,12 @@
 	margin-left: 50px;
 }
 
-.spark-title2 {
-	text-align: left;
+.spark-title1 {
+    opacity: 0.5;
 }
 
 .spark-desc-text {
-	margin-bottom: 5%;
+    margin: 15px 0 5% 50px;
 }
 
 #section4-last {
