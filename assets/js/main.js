@@ -42,10 +42,14 @@ jQuery(document).ready(function($){
 
     //smooth scroll to second section
     $('#begin-button').on('click', function(event){
-      contentSections.show();
-      event.preventDefault();
-      smoothScroll($(this.hash));
-      AOS.refresh()
+      header.fadeOut();
+      setTimeout(
+      function() 
+      {
+        contentSections.fadeIn();
+      AOS.refresh();
+      }, 500);
+      $('#map-constraint').hide();
     });
 
     //smooth scroll to second section
@@ -69,7 +73,7 @@ jQuery(document).ready(function($){
 	function smoothScroll(target) {
         $('body,html').animate(
         	{'scrollTop':target.offset().top},
-        	1000
+        	800
         );
 	}
 });
@@ -86,10 +90,8 @@ $(document).scroll(function() {
     $('#cd-vertical-nav').fadeOut();
   }
 
-  if (y > bigfour_top - 500) {
-    // $('#map-c').fadeOut();
-  } else {
-    // $('#map-c').fadeIn();
+  if ((!$('#section5').is(':offscreen'))) {
+    $('#map-constraint').show();
   }
 
   var c = 1;
