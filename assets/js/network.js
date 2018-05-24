@@ -17,7 +17,7 @@ var people = [
     relationship: "Ally turned enemy. Without Zapata’s assistance in defeating Díaz’s forces, Madero might never have been elected president. However, as president Madero ignored Zapata’s pleas for land reform."},
   {src: '../assets/images/people/orozco.jpeg', name: "Pascual Orozco", 
     desc: "Orozco was a self-made merchant who joined Madero’s movement in 1910. He commanded rural forces in Chihuahua, and fought in some of the first battles. His forces were key in defeating Díaz. Orozco later turned against Madero because Madero did not comply with his own Plan de San Luis Potosi. Orozco recognized Huerta as president, who then named him General of Federal Troops, fighting against Carranza and Villa. When Huerta was overthrown, Orozco was exiled to El Paso, where he was killed by a group of Texas Rangers in 1915.", 
-    relationship: "Ally turned enemy. Zapata and Orozco both fought against Díaz, and in his Plan de Ayala Zapata named Orozco as leader of the revolution. However, when Orozco sided with Huerta, who Zapata despised, Zapata turned against Orozco."},
+    relationship: "Ally turned enemy. Zapata and Orozco both fought against Díaz, and in the Plan de Ayala, Zapata named Orozco as leader of the revolution. However, when Orozco sided with Huerta, whom Zapata despised, Zapata turned against Orozco."},
 ]
 var nodes = new vis.DataSet([
     {id: 1, shape: 'circularImage', image: people[0]['src'], chosen: {node: false}},
