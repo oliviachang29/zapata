@@ -69,6 +69,10 @@ $(document).scroll(function() {
         map_c.show();
     }
 
+    if ((!$('#section6').is(':offscreen'))) {
+        AOS.refresh();
+    }
+
     var c = 1;
     map_texts.each(function() {
         $this = $(this);
