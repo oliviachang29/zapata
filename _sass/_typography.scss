@@ -37,7 +37,10 @@ strong {
 
 .white-bg-text {
   line-height: 29px;
-  margin-left: 50px;
+
+  @media only screen and (min-width : 768px) {
+    margin-left: 50px;
+  }
   margin-top: 15px;
 }
 
@@ -50,7 +53,10 @@ strong {
   font-weight: normal;
   line-height: 29px;
   font-size: 16px;
-  width: 472px;
+
+  @media only screen and (min-width : 768px) {
+    width: 472px;
+  }
 }
 
 .title {
@@ -62,18 +68,23 @@ strong {
 .title1 {
   opacity: 0.10;
   font-family: HarrietDisplay-BoldItalic;
-  font-size: 110px;
   color: #000000;
   letter-spacing: -2.7px;
   text-transform: uppercase;
+  font-size: 90px;
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  @media only screen and (min-width : 768px) {
+    font-size: 110px;
+  }
+
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  /*@media only screen and (max-width : 768px) {
+    margin: 0 auto;
+  }*/
 }
 
 .title2 {
@@ -94,8 +105,10 @@ strong {
   letter-spacing: 0;
   text-align: center;
   line-height: 50px;
-  width: 45%;
-  margin-top: 5%;
+  margin: 5% 0px;
+  @media only screen and (min-width : 768px) {
+    width: 45%;
+  }
 }
 
 .quote-dark {

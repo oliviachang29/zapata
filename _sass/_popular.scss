@@ -11,13 +11,20 @@
 
 #card-holder {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
+	flex-direction: column;
+
+	@media only screen and (min-width : 768px) {
+		flex-direction: row;
+	}
 }
 
 .col {
 	display: flex;
 	flex-direction: column;
+	@media only screen and (max-width : 768px) {
+		margin: 0 auto;
+	}
 }
 
 .card {
@@ -79,4 +86,7 @@
 }
 #quote-3 {
 	margin-top: 3%;
+	@media only screen and (max-width : 768px) {
+		display: none;
+	}
 }

@@ -7,8 +7,9 @@
 
 #early-years-header {
   /* DO NOT CHANGE */
-  margin-bottom: 10%;
+  
   margin-top: 0%;
+  margin-bottom: 120px;
 }
 
 #timeline-1 {
@@ -108,7 +109,16 @@
   box-sizing: border-box;
   font-family: 'Pathway Gothic One', sans-serif;
   color: #fff;
-  font-size: 36px;
+  
+  font-size: 24px;
+
+  @media only screen and (min-width : 768px) {
+    font-size: 32px;
+  }
+
+  @media only screen and (min-width : 992px) {
+    font-size: 36px;
+  }
 }
 .timeline-item:nth-child(even) {
   align-self: flex-end;
@@ -159,6 +169,12 @@
   text-align: center;
   margin-bottom: 80px;
   position: relative;
+}
+
+#morelos-map-container {
+  @media only screen and (max-width : 768px) {
+    display: none;
+  }
 }
 
 #morelos-map-img {

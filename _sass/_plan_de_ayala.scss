@@ -7,8 +7,11 @@
 }
 
 #plan-image-container {
+	width: 90%;
+	margin: 0 auto;
 	margin-top: 5%;
 }
+
 
 #plan-intro {
 	margin-top: 2%;
@@ -33,15 +36,23 @@
 
 
 .quote-left {
-	margin-right: 5%;
+	@media only screen and (min-width : 768px) {
+		margin-right: 5%;
+	}
 }
 
 .quote-right {
-	margin-left: 5%;
+	@media only screen and (min-width : 768px) {
+		margin-left: 5%;
+	}
 }
 
 
 .plan-row-container {
+	@media only screen and (max-width : 768px) {
+		width: 90%;
+		margin: 0 auto;
+	}	
 	margin: 5% 0%;
 	/*flex-direction: row-reverse !important;*/
 }

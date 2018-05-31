@@ -25,11 +25,14 @@
 
 .huerta-image {
 	/*position: relative;*/
-	width: 45%;
-	/*height: 100%;*/
+	@media only screen and (max-width : 992px) {
+		margin-bottom: 30px;
+	}
+	@media only screen and (min-width : 992px) {
+		width: 45%;
+		margin-right: 50px;
+	}
 	height: auto;
-	margin-right: 50px;
-	/*background-position: fixed;*/
 }
 
 .huerta-image img {

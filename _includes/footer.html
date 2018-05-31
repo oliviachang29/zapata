@@ -10,7 +10,9 @@
 <script src="/assets/js/main.js"></script> <!-- Resource jQuery -->
 
 <script>
-	AOS.init();
+	AOS.init({
+        disable: window.innerWidth < 992
+    });
 </script>
 
 

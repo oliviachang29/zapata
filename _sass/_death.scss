@@ -6,10 +6,19 @@
     background-size: cover;
 }
 
+.death-container {
+	margin: 0 auto;
+	width: 80%;
+}
 .death-image-container {
-	width: 30%;
+	@media only screen and (max-width : 768px) {
+		margin: 5% auto;
+	}
+	width: 300px;
 	height: 350px;
-	margin-right: 40px;
+	@media only screen and (min-width : 768px) {
+		margin-right: 40px;
+	}
 }
 
 .death-image-container img {
@@ -32,12 +41,20 @@
 	margin-top: 15px;
 }
 
+.corridos-container2 {
+	@media only screen and (max-width : 768px) {
+		margin: 0 auto;
+	}
+}
+
 .corridos-left {
 	margin-right: 50px;
+	@media only screen and (max-width : 768px) {
+		margin: 0 auto;
+	}
 }
 
 .corridos-right {
-
 }
 
 .corridos-text-container {

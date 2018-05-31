@@ -15,59 +15,35 @@
 	margin-bottom: 5%;
 }
 
-#diaz-img-container {
-	margin-bottom: 30px;
-}
-
-#diaz-img {
-	box-shadow: 10px 10px rgba(216,216,216,0.50);
-	width: 300px;
-}
-
-#diaz-img-name {
-	margin-top: 30px;
-	font-family: 'Pathway Gothic One';
-	font-size: 48px;
-	color: #000000;
-	letter-spacing: -0.9px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-#diaz-img-date {
-	text-align: center;
-	margin-top: 15px;
-	font-family: 'Cardo';
-}
-
-#diaz-desc-text {
-	/*margin-top: 4%;*/
-}
-
 #diaz-reasons {
 	margin: 0 auto;
   left: 50%;
   width: 90%;
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-    	width: 70%;
-    }
+  @media only screen and (min-width : 992px) {
+  	width: 70%;
+  }
 
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-    	width: 60%;
-    }
+  @media only screen and (min-width : 1200px) {
+  	width: 60%;
+  }
 }
 
 .diaz-reason {
 	display: flex;
 	flex-direction: row;
 	margin-top: 30px;
+
+  @media only screen and (max-width : 768px) {
+    flex-direction: column;
+  }
 }
 
 #diaz-reason-2 {
 	flex-direction: row-reverse;
+	@media only screen and (max-width : 768px) {
+    flex-direction: column;
+  }
 }
 
 #diaz-reason-title2-2 {
@@ -75,17 +51,17 @@
 }
 
 .diaz-reason-text {
-	align-self: center;
-	/*width: 400px;*/
+	/*align-self: center;*/
 }
 
 #diaz-reason-text-2 {
-	text-align: left;
-	margin-right: 30px;
+  @media only screen and (min-width : 768px) {
+    margin-right: 30px;
+  }
 }
 
 #diaz-zapata-birth-container {
-	width: 60%;
+	width: 90%;
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
     width: 50%;
