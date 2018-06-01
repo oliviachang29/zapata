@@ -15,6 +15,9 @@
 
 #plan-intro {
 	margin-top: 2%;
+	@media only screen and (max-width : 768px) {
+
+	}
 	margin-left: 2%;
 }
 
@@ -49,17 +52,24 @@
 
 
 .plan-row-container {
-	@media only screen and (max-width : 768px) {
-		width: 90%;
+	display: flex;
+	flex-direction: row;
+	@media only screen and (max-width : 992px) {
+		width: 80%;
 		margin: 0 auto;
+		display: block;
 	}	
 	margin: 5% 0%;
-	/*flex-direction: row-reverse !important;*/
 }
 
 #plan-de-ayala-pic-container {
 	height: 340px;
-    width: 457px;
+    @media only screen and (max-width : 768px) {
+    	width: 80%;	
+    	object-fit: cover;
+    }
     align-self: center;
-    margin-right: 2%;
+    @media only screen and (min-width : 768px) {
+		margin-right: 2%;
+	}
 }
