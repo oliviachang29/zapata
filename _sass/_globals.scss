@@ -74,41 +74,26 @@ body, html {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/independence.jpg");
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
 }
 
 #section1-center {
-  
-  line-height: 40px;
-  width: 70%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
   color: #F8F8F8;
-  /* Extra Small Devices, Phones */ 
-  @media only screen and (min-width : 480px) {
-    font-size: 20px;
-    line-height: 36px;
-  }
+  width: 85%;
+  font-size: 20px;
+  line-height: 36px;
 
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
+    width: 70%;
     font-size: 24px;
+    line-height: 40px;
   }
 
-}
-
-.section-center {
-  color: white;
-  font-family: 'Cardo';
-  position: absolute;
-  left: 50%;
-  top: 47%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  text-align: center;
 }
 
 .dark-bg-header {

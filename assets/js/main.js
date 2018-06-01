@@ -10,7 +10,7 @@ jQuery.expr.filters.offscreen = function(el) {
 jQuery(document).ready(function($) {
     var contentSections = $('.cd-section'),
         navigationItems = $('#cd-vertical-nav a');
-    header = $('header'),
+        header = $('header'),
         map = $('#map'),
         map_c = $('#map-constraint'),
         map_texts = $('.spark-indv-text-container'),
@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
         bigfour_top = bigfour.offset().top,
 
         navigationItems.hide();
-    // contentSections.hide();
+        contentSections.hide();
 
     map.stick_in_parent({
         offset_top: $(window).height() / 8
@@ -27,12 +27,11 @@ jQuery(document).ready(function($) {
     //smooth scroll to second section
     $('#begin-button').on('click', function(event) {
         event.preventDefault();
-        // contentSections.show();
-
         header.fadeOut();
         setTimeout(
             function() {
                 contentSections.fadeIn();
+                window.innerWidth < 992 ? $('#section4').hide() : $('#section4-mobile').hide()
                 map_c.hide();
                 AOS.refresh();
             }, 500);
