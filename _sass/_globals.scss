@@ -155,3 +155,21 @@ body, html {
 .darken-image {
   filter: saturate(0) brightness(0.95);
 }
+
+
+#bib {
+  background-color: white;
+}
+.bib-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.works-cited {
+  text-align: center;
+  width: auto;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.bib-text {
+  width: 100%;
+}
