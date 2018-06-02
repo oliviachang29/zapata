@@ -1,0 +1,27 @@
+/* Intro */
+#section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/independence.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+#section1-center {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  color: #F8F8F8;
+  width: 85%;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: 'Cardo';
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    width: 70%;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+}
