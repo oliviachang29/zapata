@@ -1,4 +1,7 @@
-# mexicanrev
-timeline/profile of emiliano zapata, major figure of the mexican revolution.
+# [zapata](https://zapata.oliviachang.me)
 
-<img src="https://github.com/oliviachang29/mexicanrev/blob/master/assets/images/demo.png" alt="logo" width="500">
+Historical profile of Emiliano Zapata, who was a major figure in the Mexican Revolution. Created site for a U.S. government class.
+
+<a href="https://zapata.oliviachang.me">
+	<img src="/assets/images/demo.png" alt="logo" width="500">
+</a>
