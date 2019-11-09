@@ -1,14 +1,12 @@
 title: Emiliano Zapata
 description: >
-  Exploring the life of Mexico's greatest revolutionary, champion of agrarianism, and revered cultural figure.
+  Exploring the life of Mexico's greatest revolutionary and champion of agrarianism, and revered cultural figure.
 baseurl: ""
 url: "https://zapata.oliviachang.me"
 
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
